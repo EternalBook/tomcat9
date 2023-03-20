@@ -16,11 +16,6 @@ import java.io.PrintWriter;
 public class Servlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-//        String id = request.getParameter("id");
-//        String password = request.getParameter("password");
-//        response.setContentType("text/html;charset=utf-8");
-//        PrintWriter out = response.getWriter();
-//        out.println("id ===>" + id + ",password ===> " + password);
         //1.加入从数据库查询到了学生的信息
         Student stu = new Student("123", "小王", "21大数据02", "蔡老师");
         JSONObject jsonObject = JSONObject.fromObject(stu);
