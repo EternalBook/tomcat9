@@ -39,7 +39,6 @@ public class AdminDao extends BaseDao {
             System.out.println(admin.getName());
         } else {
             System.out.println("没有该用户");
-
         }
     }
 }
